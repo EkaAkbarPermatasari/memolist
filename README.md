@@ -68,11 +68,11 @@ memolist-software/
 ### **Steps to Run Locally**
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/EkaAkbarPermatasari/memo.list.git
+   git clone https://github.com/EkaAkbarPermatasari/memolist.git
    ```
 2. **Navigate to the project folder:**
    ```bash
-   cd memo.list
+   cd memolist
    ```
 3. **Open the `index.html` file** in your web browser by double-clicking or using the "Open with" feature.
 4. If you want to serve the project locally using a web server, you can install a simple HTTP server:
