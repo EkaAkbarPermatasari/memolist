@@ -36,26 +36,26 @@
 ## **Structured Folder of the Software** 
 
 memolist-software/
-│
-├── index.html               # Main HTML file
-├── README.md                # Documentation for the project
-├── package.json             # If using npm for dependencies
-├── .gitignore               # Files to be ignored by git
-├── assets/                  # Folder to hold images, fonts, and other static assets
-│   └── images/
-├── css/                     # Folder to hold CSS files
-│   └── style.css            # Main stylesheet
-├── js/                      # Folder to hold JavaScript files
-│   └── main.js              # Main JavaScript file
-├── components/              # Reusable HTML components (like header, footer)
-│   └── header.html
-│   └── footer.html
-├── views/                   # Specific HTML views/pages
-│   └── project.html         # Project-related UI
-│   └── task.html            # Task-related UI
-│   └── user.html            # User-related UI
-└── backend/                 # Optionally, if planning to include backend logic
-    └── api.js               # Example API implementation (if needed)
+ index.html               # Main HTML file
+ README.md                # Documentation for the project
+ package.json             # If using npm for dependencies
+ .gitignore               # Files to be ignored by git
+   assets/                # Folder to hold images, fonts, and other static assets
+      images/
+   css/                   # Folder to hold CSS files
+      style.css           # Main stylesheet
+   js/                    # Folder to hold JavaScript files
+      main.js             # Main JavaScript file
+   components/            # Reusable HTML components (like header, footer)
+      header.html
+      footer.html
+   dashboard/             # initiation design
+   views/                 # Specific HTML views/pages
+      project.html        # Project-related UI
+      task.html           # Task-related UI
+   user.html              # User-related UI
+   backend/               # Optionally, if planning to include backend logic
+      api.js              # Example API implementation (if needed)
 
 ---
 
