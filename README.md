@@ -1,6 +1,6 @@
 # **memo.list - Project Management Software**
 
-**memo.list** is a web-based project management software designed for managing tasks across divisions, ensuring users stay on track with notifications, task assignment, and collaborative tools. The platform offers task management, team collaboration, user role assignment, and analytics for progress tracking.
+**memo.list** is a web-based project management software designed for managing tasks across divisions, ensuring users stay on track with notifications, task assignment, and collaborative tools. The platform offers task management, team collaboration, user role assignment, and analytics for progress tracking. This software developed using CSS for styling, JavaScript for interactivity, and HTML for structuring the web pages.
 
 ## **Features**
 
