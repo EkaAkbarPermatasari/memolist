@@ -33,7 +33,6 @@
 - **File Uploads**: Users can upload, view, and delete files related to tasks.
 - **Comment on Files**: Users can comment on attached files to provide additional context or feedback.
 
----
 ## **Structured Folder of the Software** 
 
 memolist-software/
@@ -57,7 +56,6 @@ memolist-software/
 │   └── user.html            # User-related UI
 └── backend/                 # Optionally, if planning to include backend logic
     └── api.js               # Example API implementation (if needed)
----
 
 ---
 
