@@ -1,0 +1,285 @@
+:root{
+    --color-bg: #000a1a;
+    --color-text: #d6e8ee;
+    --color-primary: #018abe;
+    --color-secondary: #97cadb;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+/* napigator */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 5%;
+    background-color: rgb(0, 10, 26, 0.6);
+    border-bottom: 1px solid var(--color-primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999; 
+}
+
+.nav .nav-logo{
+    color: var(--color-text);
+    font-size: 1.5rem;
+    font-weight: 700; 
+    font-style: italic;
+}
+.nav .nav-logo span{
+    color: var(--color-primary);
+}
+
+.nav .nav-menu a{
+    color: var(--color-text);
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 1rem;
+}
+
+.nav .nav-menu a:hover{
+    color: var(--color-primary);
+}
+
+.nav .nav-menu a::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--color-primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.nav .nav-menu a:hover::after{
+    transform: scaleX(0.66);
+}
+
+.nav .nav-extra a{
+    color: var(--color-text);
+    margin: 0 0.5rem;
+}
+.nav .nav-extra a:hover{
+    color : var(--color-primary);
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+/* hero section */
+
+.hero{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('section\ \(6\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero .content{
+    text-align: center;
+}
+.hero .content {
+    padding: 1.4rem 7%;
+    max-width: 70rem;
+}
+.hero .content .cta{
+    margin-top: 18rem; /*buat ngatur atasnya*/
+    display: inline-block;
+    padding: 1.2rem 3.2rem;
+    font-size: 1.4rem;
+    color: var(--color-text);
+    background-color: var(--color-primary);
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* about section */
+.about{
+    padding: 8rem 7% 1.4rem;
+}
+.about h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+/* features section */
+.features{
+    padding: 8rem 7% 1.4rem;
+}
+.features h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+/* contact section */
+.contact{
+    padding: 8rem 7% 1.4rem;
+}
+.contact h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+/* login section */
+.login{
+    padding: 8rem 7% 1.4rem;
+}
+.login h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-form .input-field{
+    width: 100%;
+    height: 60px;
+    font-size: 17px;
+    padding: 0 25px;
+    margin-bottom: 25px;
+    border-radius: 35px;
+    border: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    outline: none;
+    transition: 0.3s;
+}
+.login-form .forgot{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 35px;
+}
+.login-form .forgot section{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color:#d6e8ee;
+}
+#check{
+    margin-right: 10px;
+}
+
+.login-form .forgot a{
+    text-decoration: none;
+}
+.login-form .forgot a:hover{
+    text-decoration: underline;
+    color: #018abe
+}
+.login-form .input-submit{
+    position: relative;
+}
+
+/* templet device */
+
+/* laptop */
+@media (max-width: 1366px){
+    html{
+        font-size: 90%;
+    }
+}
+
+/* tablet */
+@media (max-width: 768px){
+    html{
+        font-size: 62%;
+    }
+    #hamburger-menu{
+        display: inline-block;
+    }
+    .nav .nav-menu{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: var(--color-text);
+        width: 30rem;
+        height: 100vh;
+        transition: 0.3s;
+    }
+    .nav .nav-menu.active{
+        right: 0;
+    }
+    .nav .nav-menu a{
+        color: var(--color-bg);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+    .nav .nav-menu a::after{
+        transform-origin: 0 0;
+    }
+    .nav .nav-menu a:hover::after{
+        transform: scalex(0.2);
+    }
+}
+
+/* hp */
+@media (max-width: 450px){
+    html{
+        font-size: 55%;
+    }
+    #hamburger-menu{
+        display: inline-block;
+    }
+    .nav .nav-menu{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: var(--color-text);
+        width: 30rem;
+        height: 100vh;
+        transition: 0.3s;
+    }
+    .nav .nav-menu.active{
+        right: 0;
+    }
+    .nav .nav-menu a{
+        color: var(--color-bg);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+    .nav .nav-menu a::after{
+        transform-origin: 0 0;
+    }
+    .nav .nav-menu a:hover::after{
+        transform: scalex(0.2);
+    }
+    .hero .content .cta{
+        margin-top: 15rem; /*buat ngatur atasnya*/
+        display: inline-block;
+        padding: 1.2rem 3.2rem;
+        font-size: 1.4rem;
+        color: var(--color-text);
+        background-color: var(--color-primary);
+        border-radius: 0.5rem;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+}
+
+
+
+
+
+
