@@ -105,7 +105,7 @@ git checkout -b feature/new-feature
 git commit -m "Add a new feature"
 ```
 
-### **5. Push to your work**:
+### **5. Push to your fork**:
 ```bash
 git push origin feature/new-feature
 ```
@@ -117,4 +117,4 @@ Go to the original repository on GitHub and open a pull request.
 
 ## **License**
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the GNU General Public License v3.0. See the [LICENSE](LICENSE) file for details.
